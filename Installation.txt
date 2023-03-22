@@ -1,0 +1,69 @@
+
+//Installing the compiler (Compiler install file included)
+    Go to the program files section on the hdd 
+    click on the java folder
+    click on the jdk folder
+    right click on any item in the folder, select properties and 
+    copy the file path
+    search for advanced system settings on your computer
+    Select enviornment variables
+    create a new path named "PATH", paste the file path you copied there
+    create another path named "CLASSPATH", paste the file path you
+    copied, except this time, add   ;.;   to it and click ok
+    open your terminal and run the command:   javac
+    if options pop up, it Works
+
+//Installing the Eclipse IDE and JavaFx on it (install file included)
+    Install the Eclipse IDE :   https://www.eclipse.org/downloads/
+    Hover on the Help tab in the IDE and select "Eclipse Marketplace"
+    Search e(fx)eclipse 3.6.0 and install it
+    Hover over the New tab, and select "other"
+    Hover over to the new directory "JavaFx" and select "JavaFx Project" in it 
+
+    //Part 2 of set up: Create a user library
+        Hover on the Windows tab and select "Preference"
+        Enter "user" in the search.
+        Select the Java tab and select the "Build Path" list 
+        Click on "User Libraries"
+        Create a new library
+        Click on "Add External..."
+        Copy and paste all the library files from the JFX lib folder and open them 
+
+        //Part 3 of setup: Create a Project that uses the library
+            Click on the folder icon that has our project name next to it
+            right click on it and select "Build path", and select "Configure build path"
+            Click on "ClassPath" and select "add Library", then select "User Library"
+            Select our JavaFx library we made 
+            Click Apply
+            Click Apply and close
+
+            //Part 4 of setup: 
+                Click the little tab option next to the "Run" Button and click "Run Configurations"
+                Hover over to Java Applicaitons and click our application 
+                Click arguments
+                In the VM section for arguments Copy and paste the following
+
+                    --module-path "Path of the LIB folder for the JavaFX libraries" --add-modules javafx.controls
+                Click Apply, then click run, and the program is now configured to run JavaFx
+
+                ex:
+                --module-path "C:\Program Files\Java\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib" --add-modules javafx.controls
+        
+    
+    run over to the marketplace of the Eclipse ide, and search fx 
+    the first option will be the one we go to 
+    install it
+    once installed hover over New, and select "other" as one of the options
+    you'll see a new directory named "JavaFx"
+    click on it and select JavaFx application to create the application to run JavaFx
+
+//Setting up dark mode 
+    Hover on the Windows tab and select preference 
+    Bring down the general tab options 
+    Click on Apperance and select your desired theme
+
+//Running a Java program
+    javac filename
+     //Run the class executable that was made using the compiler
+        java classname //The classname file is named after your class name in the prog
+                        // Minus the .class file extension 
